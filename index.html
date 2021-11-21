@@ -14,7 +14,7 @@
       font-size: 30px;
     }
     h4{
-      font-size: 30px;
+      font-size: 25px;
     }
     p{
       font-size: 20px;
@@ -34,14 +34,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>Hello!!</title>
-  </head>
-  <body>
     <script>
   $(document).ready(function() {
     $("body").addClass("animated hinge");
     });
+    $("#").hide();
+    $("#target1").click(function(){
+      $("#").toggle(1000);
+    });
   
   </script>
+  </head>
+  <body>
+   
     <h1 class="text-center">self-introduction:</h1>
     <h2 class="blue-text" style="color: #1E90FF;">我的名字是洪合靜</h2>
     <h3>
@@ -49,17 +54,7 @@
     <a href="https://www.facebook.com/profile.php?id=100009964334101">this links to my Facebook!</a><p>
     <p>這是我最喜歡的小動物：</p></h3>
     <img class="image" src="https://img.ltn.com.tw/Upload/playing/page/2020/05/22/200522-23339-01-16Rc9.jpg" alt="A cute dog. :)">
-    <div class="row">
-    <div class="col-xl-20">
-      <button class="btn btn-block btn-primary" style="width:100px;height:50px;font-size:16px"><i class="fa fa-thumbs-up"></i> Like</button>
-    </div>
-    <div class="col-xl-20">
-      <button class="btn btn-block btn-info" style="width:100px;height:50px;font-size:16px"><i class="fa fa-info-circle"></i> Info</button>
-    </div>
-    <div class="col-xl-20">
-      <button class="btn btn-block btn-danger" style="width:100px;height:50px;font-size:16px"><i class="fa fa-trash"></i> Delete</button>
-    </div>
-  </div>
+   
     <main>
       <div class="silver-background">
     <p>3種我喜歡的食物:</p>
@@ -81,9 +76,11 @@
     <div class="col-xl-50">
       <h4>三個推薦的遊戲app</h4>
       <div class="well" id="left-well">
-        <button class="btn btn-default target" id="target1" style="width:160px;height:50px;font-size:16px">Asphalt 8+</button>
-        <button class="btn btn-default target" id="target2" style="width:160px;height:50px;font-size:16px">Threes+</button>
-        <button class="btn btn-default target" id="target3" style="width:160px;height:50px;font-size:16px">PvZ 2</button>
+        <button class="btn btn-default target" id="target1" style="width:100px;height:50px;font-size:16px">Asphalt 8+</button>
+        <div id="p1" style="display: none;">
+        <img class="picture"; img style="width: 150px;height: 150px;" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.behance.net%2Fgallery%2F24192113%2FAsphalt-8-(APP-icons)&psig=AOvVaw3KuJe4ALKSQfhWgmJ1MpRB&ust=1637585470900000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNC7rLu_qfQCFQAAAAAdAAAAABAJ">
+        <button class="btn btn-default target" id="target2" style="width:100px;height:50px;font-size:16px">Threes+</button>
+        <button class="btn btn-default target" id="target3" style="width:100px;height:50px;font-size:16px">PvZ 2</button>
       </div>
     </div>
     <div class="col-xl-50">
