@@ -12,6 +12,7 @@
     }
     h3{
       font-size: 30px;
+      font-family: Lobster, Monospace;
     }
     h4{
       font-size: 25px;
@@ -38,6 +39,8 @@
   $(document).ready(function() {
     $("body").addClass("animated hinge");
     });
+    $("button").addClass("animated bounce");
+      
     $("#p1").hide();
     $("#target1").click(function(){
       $("#p1").toggle(1000);
@@ -90,11 +93,11 @@
     <div class="col-xl-50">
       <h4>五個實用的手機app</h4>
       <div class="well" id="right-well">
-        <button class="btn btn-default target" id="target4" style="width:160px;height:50px;font-size:16px">Quizlet</button>
-        <button class="btn btn-default target" id="target5" style="width:160px;height:50px;font-size:16px">ClassUp</button>
-        <button class="btn btn-default target" id="target6" style="width:160px;height:50px;font-size:16px">天天記帳</button>
-        <button class="btn btn-default target" id="target7" style="width:160px;height:50px;font-size:16px">P.C.</button>
-        <button class="btn btn-default target" id="target8" style="width:160px;height:50px;font-size:16px">Whoscall</button>
+        <button class="btn btn-default target" id="target4" style="width:100px;height:50px;font-size:16px">Quizlet</button>
+        <button class="btn btn-default target" id="target5" style="width:100px;height:50px;font-size:16px">ClassUp</button>
+        <button class="btn btn-default target" id="target6" style="width:100px;height:50px;font-size:16px">天天記帳</button>
+        <button class="btn btn-default target" id="target7" style="width:100px;height:50px;font-size:16px">P.C.</button>
+        <button class="btn btn-default target" id="target8" style="width:100px;height:50px;font-size:16px">Whoscall</button>
       </div>
     </div>
   </div>
