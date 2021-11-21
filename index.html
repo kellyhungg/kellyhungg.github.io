@@ -2,15 +2,10 @@
   $(document).ready(function() {
     $("body").addClass("animated hinge");
     });
-  if (navigator.geolocation){
-  navigator.geolocation.getCurrentPosition(function(position) {
-    document.getElementById('data').innerHTML="latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude;
-  });
+  
 </script>
-<h4>You are here:</h4>
-<div id="data">
 
-</div>
+
 
 <!DOCTYPE html>
 <html>
@@ -51,6 +46,17 @@
     <a href="https://www.facebook.com/profile.php?id=100009964334101">this links to my Facebook!</a><p>
     <p>這是我最喜歡的小動物：</p></h3>
     <img class="image" src="https://img.ltn.com.tw/Upload/playing/page/2020/05/22/200522-23339-01-16Rc9.jpg" alt="A cute dog. :)">
+    <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+    </div>
+  </div>
     <main>
       <div class="silver-background">
     <p>3種我喜歡的食物:</p>
