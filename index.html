@@ -2,7 +2,15 @@
   $(document).ready(function() {
     $("body").addClass("animated hinge");
     });
+  if (navigator.geolocation){
+  navigator.geolocation.getCurrentPosition(function(position) {
+    document.getElementById('data').innerHTML="latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude;
+  });
 </script>
+<h4>You are here:</h4>
+<div id="data">
+
+</div>
 
 <!DOCTYPE html>
 <html>
@@ -36,7 +44,7 @@
     <title>Hello!!</title>
   </head>
   <body>
-    <h1>self-introduction:</h1>
+    <h1 class="text-center">self-introduction:</h1>
     <h2 class="blue-text" style="color: #1E90FF;">我的名字是洪合靜</h2>
     <h3>
       <p>這是我的聯絡方式：
