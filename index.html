@@ -37,10 +37,12 @@
     <title>Hello!!</title>
     <script>
   $(document).ready(function() {
+    $(".well").addClass("animated shake");
+    $(".text-primary").addClass("animated shake");
     $("body").addClass("animated hinge");
     });
     $("button").addClass("animated bounce");
-    $(".text-primary").addClass("animated shake");
+    
       
     $("#p1").hide();
     $("#target1").click(function(){
